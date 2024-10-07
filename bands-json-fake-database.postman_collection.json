@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "b37d3d36-42d9-42cd-a46f-a4335d53edd5",
+		"name": "exploding-bands-json-fake-database",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33616140"
+	},
+	"item": [
+		{
+			"name": "Get artists",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/artists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"artists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get artist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/artists/6643b1688c94709aaaa9db7f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"artists",
+						"6643b1688c94709aaaa9db7f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add artist",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Deep Purple",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "Rock",
+							"type": "default"
+						},
+						{
+							"key": "category",
+							"value": "hard rock",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef80bd0-2f9b-4bf0-9e42-aa587c7895f5"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/artists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"artists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit artist",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Deep Purple\",\r\n    \"description\": \"Rock Band\",\r\n    \"category\": \"hard rock\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/artists/86cbc00a-3850-4cfb-a410-6934aa19f40c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"artists",
+						"86cbc00a-3850-4cfb-a410-6934aa19f40c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete artist",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/artists/aa107bed-8032-4c15-ac0d-40eb1429ee73",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"artists",
+						"aa107bed-8032-4c15-ac0d-40eb1429ee73"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

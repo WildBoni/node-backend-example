@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b37d3d36-42d9-42cd-a46f-a4335d53edd5",
-		"name": "exploding-bands-json-fake-database",
+		"_postman_id": "a973c458-0ed6-4107-832f-7948547126d4",
+		"name": "bands-json-fake-database",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33616140"
 	},
@@ -80,7 +80,7 @@
 						},
 						{
 							"key": "category",
-							"value": "hard rock",
+							"value": "rock",
 							"type": "default"
 						},
 						{
@@ -112,7 +112,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Deep Purple\",\r\n    \"description\": \"Rock Band\",\r\n    \"category\": \"hard rock\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Deep Purple\",\r\n    \"description\": \"Rock Band\",\r\n    \"category\": \"rock\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
